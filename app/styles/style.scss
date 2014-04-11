@@ -1,8 +1,48 @@
-.nav {
-	width: 100%;
-	background: #333;
+body {
+	background: linear-gradient(to bottom, deepskyblue, blue);
+}
+
+.jumbotron {
+
+	background-image: url('../images/popestudio2.png');
+	background-size: 100%;
+	border-bottom: 10px solid seagreen;
+	height: 250px;
+	-webkit-transition: .7s all ease-in-out;
+	&:hover{
+		height: 400px;
+		border-bottom: 15px solid darkseagreen;
+		box-shadow: 10px 10px 50px #222;
+	}
+	h1, p {
+		color: #eee;
+		text-align: left;
+		padding-left: 20%;
+	}
 
 }
-.jumbotron {
-	background-image: url('images/popestudio2.png');
+.container {
+	border: 1px solid red;
+}
+.jumbotron2 {
+	height: 200px;
+	width: 100%;
+	border: 1px solid red;
+	background-image: url('../images/charleston.jpg');
+	// background-position: scroll;
+	background-attachment: fixed;
+	-webkit-transition: .5s all ease;
+	h1, p {
+		color: #eee;
+		text-align: left;
+		padding-left: 20%;
+		text-shadow: 2px 2px 2px #222;
+	}
+	&:hover {
+		height: 400px;
+	}
+}
+.info1 {
+	box-shadow: 5px 5px 50px #222;
+	background-color: #eee;
 }
