@@ -1,48 +1,73 @@
+$shadow: 10px 10px 50px #222;
+
 body {
-	background: linear-gradient(to bottom, deepskyblue, blue);
+	background: linear-gradient(to bottom, deepskyblue, skyblue);
 }
 
 .jumbotron {
 
 	background-image: url('../images/popestudio2.png');
-	background-size: 100%;
-	border-bottom: 10px solid seagreen;
+	background-size: 100%;	
+}
+
+.jumbotron, .jumbotron2 {
+	-webkit-transition: .9s all ease-in-out;
 	height: 250px;
-	-webkit-transition: .7s all ease-in-out;
+	border-bottom: 10px solid seagreen;
+	border-top: 10px solid #0066cc;
 	&:hover{
-		height: 400px;
+		height: 500px;
 		border-bottom: 15px solid darkseagreen;
-		box-shadow: 10px 10px 50px #222;
-	}
+		border-top: 15px solid #0099cc;
+		box-shadow: $shadow;
+		}
 	h1, p {
 		color: #eee;
 		text-align: left;
 		padding-left: 20%;
 	}
+}
 
-}
-.container {
-	border: 1px solid red;
-}
 .jumbotron2 {
-	height: 200px;
+	
 	width: 100%;
-	border: 1px solid red;
+	// border: 1px solid red;
 	background-image: url('../images/charleston.jpg');
 	// background-position: scroll;
 	background-attachment: fixed;
-	-webkit-transition: .5s all ease;
-	h1, p {
-		color: #eee;
-		text-align: left;
-		padding-left: 20%;
-		text-shadow: 2px 2px 2px #222;
-	}
-	&:hover {
-		height: 400px;
-	}
 }
 .info1 {
-	box-shadow: 5px 5px 50px #222;
+	box-shadow: $shadow;
 	background-color: #eee;
 }
+
+.popup {
+	
+	width: 80%;
+	height: 500px;
+	border: 3px solid #eee; 
+	position: absolute;
+	background-color: #333;
+	overflow: scroll;
+	z-index: 2;
+	box-shadow: $shadow;
+
+	ul {
+		font-size: 1.25em;
+		width: 45%;
+		// display: inline-block;
+		max-height: 100%;
+		}
+	ul, h1 {
+		color: #eee;
+		padding: 5%;
+		}
+}
+.row {
+	// border: 1px solid red;
+}
+
+
+
+
+
