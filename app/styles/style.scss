@@ -1,39 +1,92 @@
 $shadow: 10px 10px 50px #222;
 
+.nav {
+	letter-spacing: .25em;
+	background-color: black;
+	margin-bottom: 0px;
+	position: fixed;
+	top: 0;
+
+
+	ul {
+		display: -webkit-flex;
+		-webkit-flex-direction: row;
+		-webkit-justify-content: space-between;
+		-webkit-flex-wrap: wrap;
+		list-style: none;
+		width: 100%;
+		li {
+			display: inline-block;
+			border-right: 2px solid #eee;
+		}
+		
+	}
+	a {
+		text-decoration: none;
+		color: #eee;
+	}
+	font-size: 30px;
+	font-family: "Arial Narrow";
+	font-weight: 100;
+	color: #eee;
+	text-align: center;
+	text-shadow: 2px 3.464px 5px rgb( 0, 0, 0 );
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+}
+
+
 body {
-	background: linear-gradient(to bottom, deepskyblue, skyblue);
+	padding-top: 0px;
+	background-image: url('../images/black.png'), url('../images/charleston.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
 }
 
 .jumbotron {
-
-	background-image: url('../images/popestudio2.png');
+	padding-top: 0px;
+	background-image: url('../images/tree2.png'), url('../images/tree1.jpg');
 	background-size: 100%;	
 }
+// .header2 {
+//   background-image: ;
+//   position: absolute;
+//   left: 0px;
+//   top: 0px;
+//   width: 1920px;
+//   height: 1080px;
+//   z-index: 3;
+// }
 
-.jumbotron, .jumbotron2 {
+
+.jumbotron {
 	-webkit-transition: .9s all ease-in-out;
 	height: 250px;
+
+	margin: 0px;
 	border-bottom: 10px solid seagreen;
-	border-top: 10px solid #0066cc;
+	// border-top: 10px solid #0066cc;
 	&:hover{
 		height: 500px;
 		border-bottom: 15px solid darkseagreen;
-		border-top: 15px solid #0099cc;
+		// border-top: 15px solid #0099cc;
 		box-shadow: $shadow;
 		}
 	h1, p {
 		color: #eee;
 		text-align: left;
-		padding-left: 20%;
-	}
+		padding-left: 5%;
+			}
 }
 
+
 .jumbotron2 {
-	
+	height: 500px;
 	width: 100%;
 	// border: 1px solid red;
 	background-image: url('../images/charleston.jpg');
-	// background-position: scroll;
+	background-size: 100%;
 	background-attachment: fixed;
 }
 .info1 {
@@ -46,7 +99,11 @@ body {
 	width: 80%;
 	height: 500px;
 	border: 3px solid #eee; 
-	position: absolute;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	background-color: #333;
 	overflow: scroll;
 	z-index: 2;
@@ -63,10 +120,15 @@ body {
 		padding: 5%;
 		}
 }
-.row {
-	// border: 1px solid red;
+.black {
+	height: 400px;
+	width: 100%;
 }
-
+.grey {
+	background-image: url('../images/grey.png');
+	width: 100%;
+	background-color: #333;
+}
 
 
 
